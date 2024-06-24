@@ -10,9 +10,9 @@ public class SqlRepository  {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public int save(firsttable firsttable) {
+    public int save(DbValue dbValue) {
         return jdbcTemplate.update("INSERT INTO firsttable (hai, hai2, id) VALUES(?,?,?)",
-                new Object[] { firsttable.getHai(), firsttable.getHai2(), firsttable.getId() });
+                new Object[] { dbValue.getHai(), dbValue.getHai2(), dbValue.getId() });
     }
 
 

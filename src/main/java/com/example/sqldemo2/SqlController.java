@@ -16,11 +16,11 @@ public class SqlController {
 
     @GetMapping("/test")
     public void test(){
-        firsttable firsttable = new firsttable();
-        firsttable.setHai("oki2");
-        firsttable.setHai2("doki2");
+        DbValue dbValue = new DbValue();
+        dbValue.setHai("oki2");
+        dbValue.setHai2("doki2");
 
-        service.createFirsttable(firsttable);
+        service.createFirsttable(dbValue);
     }
 
 }

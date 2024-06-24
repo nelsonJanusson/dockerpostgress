@@ -2,7 +2,7 @@ package com.example.sqldemo2;
 
 import java.util.UUID;
 
-public class firsttable {
+public class DbValue {
 
     private UUID id;
 

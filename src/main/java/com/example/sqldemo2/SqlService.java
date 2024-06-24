@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 public class SqlService {
     private final SqlRepository repository;
 
-    public void createFirsttable(firsttable firsttable) {
-         repository.save(firsttable);
+    public void createFirsttable(DbValue dbValue) {
+         repository.save(dbValue);
     }
 }
